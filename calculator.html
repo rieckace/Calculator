@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js" defer></script>
+</head>
+<body>
+    <div class="calculator-container">
+        <h2>Calculator</h2>
+        <input type="text" readonly name="Calculator" id="calculator">
+        
+        <table>
+            <tr>
+                <td><button onclick="append(9)">9</button></td>
+                <td><button onclick="append(8)">8</button></td>
+                <td><button onclick="append(7)">7</button></td>
+                <td><button onclick="setOperator('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="append(6)">6</button></td>
+                <td><button onclick="append(5)">5</button></td>
+                <td><button onclick="append(4)">4</button></td>
+                <td><button onclick="setOperator('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="append(3)">3</button></td>
+                <td><button onclick="append(2)">2</button></td>
+                <td><button onclick="append(1)">1</button></td>
+                <td><button onclick="setOperator('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="append(0)">0</button></td>
+                <td><button onclick="reset()">C</button></td>
+                <td><button onclick="showresult()">=</button></td>
+                <td><button onclick="setOperator('/')">/</button></td>
+            </tr>
+        </table>
+        <button id="changeColorButton">Change Color</button>
+    </div>
+</body>
+</html>
